@@ -1,0 +1,17 @@
+<div id="contentContainer" data-ng-controller="ContentController">
+	<div id="uploadSection">
+		<h4>Upload CSV</h4>
+		<!-- <input type="file" id="csvFileInput" ng-model="csvFileInput" ng-change="change()" accept=".csv" />  -->
+		<!-- <input type="file" file-model="csvFileInput" accept=".csv" /> -->
+		<input type="file" ng-model="csvFileInput" file-change accept=".csv" />
+	</div>
+	<div id="csvResult">
+		<h4>Actual Result</h4>
+		<div data-ng-repeat="csvItem in csvItems">
+			<span>{{csvItem}}</span>
+		</div>
+	</div>
+	<div id="checkBoxSection">
+		
+	</div>
+</div>

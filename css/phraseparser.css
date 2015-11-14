@@ -1,0 +1,28 @@
+html,body {
+	overflow-x: hidden;
+}
+
+body {
+	padding-top: 70px;
+}
+
+footer {
+	padding: 10px 0;
+}
+
+.text-brand{
+	text-shadow:2px 2px 2px #cccccc;
+}
+
+.box-format{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px;
+}
+
+.nav-bg{
+	background-color: #f8f8f8;
+}

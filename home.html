@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html data-ng-app="appJsPhraseParser">
+<head>
+	<meta charset="utf-8">
+	<title>RII Phrase Parser</title>
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/phraseparser.css" />
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand text-brand" href="#/home">RUBBER INDUSTRIES Phrase Parser</a>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right" data-ng-controller="NavbarController">
+					<li data-ng-repeat="m in menuList" data-ng-class="{'active':getClass('/{{m.url}}')}"><a href="#/{{m.url}}">{{m.name}}</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			
+			<!-- Content -->
+			<div class="row box-format">
+				
+				<div data-ng-view=""></div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="navbar-inner">
+				<div class="container">
+					<footer>
+						<div class="row">
+							<div class="span4">Developed by Pao IM</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	
+	<script type="text/javascript" src="js/appPhraseParser.js"></script>
+	<script type="text/javascript" src="js/service/AppPhraseParserService.js"></script>
+	<script type="text/javascript" src="js/controller/AppPhraseParserController.js"></script>
+	<script type="text/javascript" src="js/controller/AppPhraseParserCvsController.js"></script>
+	<script type="text/javascript" src="js/directive/AppPhraseParserFileDirective.js"></script>
+	
+</body>
+</html>
